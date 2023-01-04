@@ -1,0 +1,23 @@
+# url= https://www.youtube.com/watch?v=flaiHTHhyE4&list=PLK8LlaNiWQOvAYUMGMTFeZIOo0oKmZhdw&index=1
+# video3: değişkenler: nominal, ordinal, metrik (ılk ıkısı kategorık ıken dıgerı ıse sayısal ıcın kullanılır.)
+# nominal(sınıfsal): degerler arasında karsılastırma yapılamaz. ornek erkek ve kadın. karsılastırılamaz ama sınıflanabilir.
+# ordinal: burada ise bir karşılaştırma olabilir. sıralama vardır. A<B<C<D gibi...
+
+
+# betimsel istatistik: istatislik sürecin ilk adımıdır. bu kısım veri setinde öyle küçük bir şekilde bakmamızı sağlar. çok az bilgiye sahip olmamızı sağlar. ve burada betimsel istatistik 2 gruba ayrılır: merkezi eğilim ve de merkezi dağılım olarak.
+# merkezi eğilim: aritmetik ortalama , kartiller, mod, medyan (bunlar en yaygın olanları)
+# merkezi dağılım: değişim aralığı, standart sapma, varyans, çarpıklık, basıklık(merkezi dağılım bize alan verir.)
+# kartil: integrali hatırla. kartil alanı yüzde 25 lik kere böler. 3 tane kartil vardır. ve de ikinci kartil medyan dır.
+
+
+# standart sapma : çok önemlidir. standart sapma her bir degerin tum verı setının ortalamasından uzaklıgını gosterır. mesela deger 15 ve ortalama 10 ise std burada 5 diye ifade edilebilir.
+# std nin yüksek olması bize riskin yüksek yani degerlerin ortalamadan çok uzaklaştığını gösterir.
+
+
+
+
+
+
+
+
+
