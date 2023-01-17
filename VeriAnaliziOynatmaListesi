@@ -13,7 +13,13 @@
 # standart sapma : çok önemlidir. standart sapma her bir degerin tum verı setının ortalamasından uzaklıgını gosterır. mesela deger 15 ve ortalama 10 ise std burada 5 diye ifade edilebilir.
 # std nin yüksek olması bize riskin yüksek yani degerlerin ortalamadan çok uzaklaştığını gösterir.
 
-# video 11 dk:7 
+
+# video 11 :
+#standart sapma hesaplama formülü: her bir gözlemden veri setinin ortalamasını çıkarırsak ve daha sonra bu her bir veriyi toplarsak sonuç her zaman 0 çıkar. bunu engellemek için her bır gozlemı ortalamadan cıkarırken onun karesını al. daha sonra bu her bır kareyı toplayıp n-1  e böleceğiz. burda ki n gözlem saysısı oluyor. n-1 e boldukten sonra cıkan sonucun karesını al ve işlem bitti. bu sonucta standart  sapma oluyor.
+# standart sapma bize her bir değerin ortalama değerden ne kadar uzakta olduğunu gösterir.
+# finansta alabileceğin en iyi yatırım standart sapması en küçük olan yatırımdır.
+
+video 12:
 
 
 
