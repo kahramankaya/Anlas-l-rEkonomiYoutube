@@ -28,11 +28,27 @@ standart sapma değerine std büyüdükçe histogram grafiği sag ve sola dogru 
 
 # video 13:
 # veri dağılım türleri: normal dağılım, negatif dağılım , pozitif dağılım. ve her dağılımda mod, medyan, ortalama değerlerinin yeri değişiyor dikkat et.
-# çarpıklık: normal dağılımda simetrik yapı bozulduğunda yani pozitif ve negatif dağılım olunca ortaya çarpıklık ortaya çıkıyor.
+# çarpıklık(Skewness): normal dağılımda simetrik yapı bozulduğunda yani pozitif ve negatif dağılım olunca ortaya çarpıklık ortaya çıkıyor.
 # normal dağılım da eğer uç değerler eklenirse çarpıklık ortaya çıkar. uç değer demek her değer diyelim ki 1000 civarında iken mesela eklenen yeni değerin 5 olması çarpıklığa yol açar.
 
+# video 14:
+# kurtosis(basıklık): kurtosis sınırı 3 olarak kabul edilir. eğer kurtosis 3 ten büyükse grfaik incelir ve kurtosis pozif olur. 3 ten küçük ise tam tersi durum olur.
+# pozitif kurtosis negatiife göre değerleri ortalamaya daha yakındır. çünkü grafik dikleştikçe değerler medyan etrafında toplanıyor. bu da standart sapmanın küçük olmasına neden oluyor.
 
 
+# video 15: 
+# veri=pd.read_csv('https://raw.githubusercontent.com/erkansirin78/datasets/master/uforeports.csv', usecols=['State','Time']) burada usecols aslında bize o dataframede ki istediğimiz değişkeni seçmemizi sağlıyor.
+# print(veri.describe()) burada seçtiğimiz o 2 değişkenin bilgileri sadece çıkar. 
+# print(veri.median()) yine aynı şekilde o iki değişkenin medyanları çıkar.
+# print(veri.quantile(q=0.25)) burada çeyreklik aldık. q 1. çeyregı aldı burada. yani aslında seçtiğimiz 2 değişkenin 1. katillerini bize gösterdi. 2. sini almasını isteseydik o zaman 0.50 yazardık.
+# print(veri.std()) # standart sapmayı verir bize.
+# print(veri.var()) varyansları verir bize.
+# print(veri.kurtosis()) basıklığı verir bize.
+# print(veri.skew()) çarpıklık değerini verir.
+
+
+
+22:55 teyim....
 
 
 
