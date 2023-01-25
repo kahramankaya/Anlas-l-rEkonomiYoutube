@@ -19,7 +19,17 @@
 # standart sapma bize her bir değerin ortalama değerden ne kadar uzakta olduğunu gösterir.
 # finansta alabileceğin en iyi yatırım standart sapması en küçük olan yatırımdır.
 
-video 12:
+# video 12:
+varyans: varyans da standart sapma gibi bir dağılım ölçüsüdür aslında. ve standart sapmanın karesi bize varyansı verir.
+yine aynı şekilde varyansta standart sapma gibi risk faktörü için çok önemlidir. finansta varyansın daha düşük olması bizim için daha önemlidir.
+standart sapma değerine std büyüdükçe histogram grafiği sag ve sola dogru basılır gıbı olur. çünkü histogram grafiğinin ortası medyan ise sağ ve sola ne kadar uzaklaşması std nin büyüklüğü hakkında bize bilgi verir. bu aynı şekilde varyans için de geçerlidir.
+
+
+
+# video 13:
+# veri dağılım türleri: normal dağılım, negatif dağılım , pozitif dağılım. ve her dağılımda mod, medyan, ortalama değerlerinin yeri değişiyor dikkat et.
+# çarpıklık: normal dağılımda simetrik yapı bozulduğunda yani pozitif ve negatif dağılım olunca ortaya çarpıklık ortaya çıkıyor.
+# normal dağılım da eğer uç değerler eklenirse çarpıklık ortaya çıkar. uç değer demek her değer diyelim ki 1000 civarında iken mesela eklenen yeni değerin 5 olması çarpıklığa yol açar.
 
 
 
