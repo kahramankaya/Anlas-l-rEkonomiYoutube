@@ -77,7 +77,21 @@ standart sapma değerine std büyüdükçe histogram grafiği sag ve sola dogru 
 # plt.hist(veri)
 # print(plt.show()) # işte uniform dağılım bu şekilde ki grafiktir. 
 
+# burda öğrenmem gereken bir kod parçacığı yazdım. eğer köşeli parantezleri unutursam kod çalışmaz.
+kaho= [4+5 for m in range(10)]
+print(kaho) # 9 sonucu 10 kere yazıldı.
 
+# şimdi amacım yukarda ki bir sürü orneklem alıp uniform dağılı ortalama dağılıma çevirmek olacak.
+# veriden 10 değer cektik. bunu 1000 kere yapmasını istedik. ve simdi elimizde 10 tane den oluşan 1000 tane orneklem var.
+# ortalamaya doğruyu bulabilmek için her bir orneklemin ortalamalarının dağılımı bize normal dağılı verir. ve burada ki k 30 ve yukarısı oldukça ortama dağılım ortaya çıkar. bunu unutma.
+orneklem= [np.mean(random.choices(veri, k=10)) for m in range(1000)]
+plt.hist(orneklem)
+print(plt.show())
+
+
+
+
+# video 21: standart hata nedir?
 
 
 
