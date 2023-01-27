@@ -92,8 +92,41 @@ print(plt.show())
 
 
 # video 21: standart hata nedir?
+# standart hata: populasyondan defalarca çektiğimiz orneklemlerin ortalamasının standart sapmasıdır. standart sapma ile standart hatayı karıştırma sakın.
+# aynı şekilde standart hatayı da standart sapma gibi küçük isteriz ki böylece ortalamaya daha da yakın olur.
 
 
+
+# video 22: 
+import seaborn as sns
+import numpy as np
+import matplotlib as plt
+veri=np.random.normal(45,5,1500) # ilk parametre ortalama, ortada ki standart sapma, son olan ise verisetinde kac tane deger oldugudur.
+print(veri)
+
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
+veri=np.random.normal(45,5,1500)
+print(veri)
+# 1. yol: matplot ile
+plt.hist(veri, bins=1200) # bins ayırdığı parça sayısını gösterir. 
+plt.show()
+
+# 2.yol : seaborn ile. seaborn ile matplottan daha ayrıntılı verdiği için seaborn kullanacağız.
+sns.histplot(veri)
+plt.show() # görüldüğü üzere daha detaylı verdi grafiği. bu yüzden veribiliminde matplottan daha çok seaborn kütüphanesi kullanılıyor.
+sns.displot(veri , kde=True, color="y") # sarı renk verdim.
+plt.show()
+sns.kdeplot(veri) # sadece dağılım grafiğini verdi.
+
+
+
+# video 23:
+.
+
+
+video 24:
 
 
 
