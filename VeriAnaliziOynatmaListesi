@@ -54,7 +54,61 @@ standart sapma değerine std büyüdükçe histogram grafiği sag ve sola dogru 
 
 
 # video 17:
-8.48 deyim
+# ölçekleme türlerinden bahsediyor. 
+
+
+
+
+# video 18:
+# .
+
+# video 19:
+# .
+
+
+# video 20: burada merkezi limit teoremini python dilinde uyguladık.
+# merkezi limit teoremi:statistik biliminde Merkezi Limit teoreminin çok anlamlı bir yeri vardır. Merkezi limit teoremine göre, süreç üzerinden alınan örnek sayısı artıkça ve dışarıdan bir etki olmadığı müddetçe
+# farklı dağılım özelliği taşıyan süreç çıktıları histogram üzerinde ortalama değer etrafında normal dağılıma yakınsar bir dağılım gösterirler.
+# import numpy as np
+# import matplotlib.pyplot as plt
+# veri= np.random.uniform(low=12,high=120,size=4000) # uniform dağılım olacak şekilde en düşük 12 en yüksek 120 ve 4000 tane veri ürettik. ama uniform şekilde ürettik.
+# print(veri)
+# print(veri.mean()) # ortalama çıktı.
+# plt.hist(veri)
+# print(plt.show()) # işte uniform dağılım bu şekilde ki grafiktir. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
