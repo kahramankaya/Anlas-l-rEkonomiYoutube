@@ -123,7 +123,10 @@ sns.kdeplot(veri) # sadece dağılım grafiğini verdi.
 
 
 # video 23:
-.
+Örneğin, bir veri setinin ortalaması 100 ve standart sapması 15 ise, Z-score hesaplanarak verinin normal dağılımdaki konumunun belirlenmesi mümkündür. Eğer bir veri noktasının değeri 130 ise, Z-score hesaplanır:
+Z = (130 - 100) / 15 = 2
+Bu, verinin ortalama değerden 2 standart sapma uzak olduğunu gösterir. Verinin normal dağılımdaki konumu, Z-score'un pozitif veya negatif olmasına göre belirlenir.
+
 
 
 video 24:
