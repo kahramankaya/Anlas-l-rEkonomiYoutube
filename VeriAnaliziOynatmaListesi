@@ -145,7 +145,15 @@ Z-score, bir verinin standard normal dağılımdaki yeri olarak tanımlanır . d
 z-table olasılık kısımlarında kullanılıyor. mesela bır seyın şu şeyin olasılık değeri sorulduğunda önce veri setinin normal dağılması gerekır. daha sonra bu olasılı degernı bulmak ıcın bu normal dagılımı standart normal dagılıma cevıriyoruz. daha sonra da alan hesaplama yapıp olasılık degerını buluyoruz. alaln hesaplaması da bı oncekı vıdeo da anlatılmıstı.
 google da z tablo yaz burdan gordugun tablo sayesınde olasılık degerını ta olarak hesaplayabılırsın.
 
+video 26: Şimdi yukarıda z tablo yöntemi le buldugumuız alanı suan scipy kütüphanesini kullanarak bulacagız.
+soru şu olsun: bir veri setimiz olsun. bu veri setinin ortalaması: 5.3 olsun ve standart sapması = 1 olsun. şimdi bu veri setinin standart normal dağıldıgını varsayıyorum.
+soru veri setinin 4.5 ten kucuk olma olasılıgı kactır?
+z score= veri-ortalama/standart sapma . bunu kullanacagız. 4.5-5.3/1=-0.8 çıkar. bunu standart normal dagılımda gosterdıgımız zaman. artık google dan z tablosuna bakarak ta orda kı ıstenılen alanı bulabılrısın. ama 
+bız burda bu scipy kutuphanesı kullnarak bulacagız.
 
+from scipy.stats import norm
+olasılık=norm(loc=5.3,scale=1).cdf(4.5) # norm da ilk parametre ortalamadır ve ortalama loc ile yazılır. ıkıncı parametre ıse satandart sapmadır o da scale ile yazılır. python da bır sey den kucuk olma olaslıgı ıse cdf ıle olur. kactan kucuk olmasını ısy-tıyorsak onuda cdf ye yazarak buluruz.
+print(olasılık) # 0.21 cıktı. demek ki yüzde 21 imiş.
 
 
 
