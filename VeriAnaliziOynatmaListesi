@@ -155,7 +155,8 @@ from scipy.stats import norm
 olasılık=norm(loc=5.3,scale=1).cdf(4.5) # norm da ilk parametre ortalamadır ve ortalama loc ile yazılır. ıkıncı parametre ıse satandart sapmadır o da scale ile yazılır. python da bır sey den kucuk olma olaslıgı ıse cdf ıle olur. kactan kucuk olmasını ısy-tıyorsak onuda cdf ye yazarak buluruz.
 print(olasılık) # 0.21 cıktı. demek ki yüzde 21 imiş.
 
-
+# eğer ki olasılıgın 4.5 ten buyuk olmasını ısteseydı o zamanyapacagımız sey asagıda kı satırda kı gıbı olurdu.
+olasılık=1-norm(loc=5.3,scale=1).cdf(4.5)
 
 
 
