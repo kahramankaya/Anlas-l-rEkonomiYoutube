@@ -140,8 +140,11 @@ video 24:
 
 
 
-video 25: standart normal dağılımdan alan hesaplamaı z tablosu kullanılarakyapıldı.
-Z-score, bir verinin standard normal dağılımdaki yeri olarak tanımlanır .
+video 25: standart normal dağılımdan alan hesaplamaı z tablosu kullanılarak yapıldı.
+Z-score, bir verinin standard normal dağılımdaki yeri olarak tanımlanır . dikkat normal dağılım demedim. standart dagılımın ortası sıfırdır.
+z-table olasılık kısımlarında kullanılıyor. mesela bır seyın şu şeyin olasılık değeri sorulduğunda önce veri setinin normal dağılması gerekır. daha sonra bu olasılı degernı bulmak ıcın bu normal dagılımı standart normal dagılıma cevıriyoruz. daha sonra da alan hesaplama yapıp olasılık degerını buluyoruz. alaln hesaplaması da bı oncekı vıdeo da anlatılmıstı.
+google da z tablo yaz burdan gordugun tablo sayesınde olasılık degerını ta olarak hesaplayabılırsın.
+
 
 
 
