@@ -176,7 +176,25 @@ bu t dağılımı örneklem sayısı 30 dan küçük ise kullanılır.
 z tablosunda bize gerekli nokta z noktasıydı yani z scoruydu. bu sayede bizler alan hesaplama yapabiliyorduk. ama t dağılımda bize gerekli nokta ise df  yani serbestlik derecesi var.
 t dağılımda serbestik derecesi arttikça t dağılımı normal dağılıma yakınsar bunu bil.
 
-8.dk dayım.
+
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+np.random.seed(0) # bunu yazarak aldıgımız orneklemeler sabit kalmış oluyor. yani her seferinde örneklem değişmiyor.
+# şimdi scipy kütüphanesi ile t tağılımı yapacağız. hatırlarsan normal dağılımı numpy kütüphanesi ile yapıyorduk.
+veri=stats.t.rvs(loc=0,df=1,size=15) # hatırlarsan normal dagılımı numpy ile yapıyorduk. burda ıse t dagılımını ise stats ile yapıyoruz.
+# loc 0 demekle grafiği normalleştiriyoruz çünkü loc a 0 demekle ortalama sıfır olur. df ise serbestlik payı oluyor.
+
+sns.distplot(veri,color="yellow",kde=True)
+plt.xlim(-5,5) # xlim() ile grafiğin sınırlarını belirlemiş oluyoruz.
+plt.show()
+
+veri2=stats.t.rvs(loc=0,df=2,size=15)
+sns.distplot(veri2,color="black",kde=True,hist=False)
+plt.show() # görüldüğü üzere df yani serbestliğini artırdığımız zaman grafik normalliğie daha yakınlaştı.
+
 
 
 
