@@ -160,7 +160,23 @@ olasılık=1-norm(loc=5.3,scale=1).cdf(4.5)
 
 
 
-28.videodayım.
+28.videodayım:
+serbestlik derecesi:
+bu kavramı bir örnek üzerinden açıklarsam daha iyi anlarım. diyelim ki 3 tane sayımız var ve bu 3 sayının toplamı 10 olsun. eğer ben bu ıkı sayısının degerını belırlersem
+3. sayı otomatikmen kesinleşmiş olur. burada bızım serbestlıgımız ıllk başta sectıgımız iki sayıdır.
+bu vıdeo da çok detaya iniyor. istersen bakabilirsin.
+
+
+
+29. video:
+bizler eğer örneklem sayısı 30 dana büyük ise o zaman dağılım normal dağılıma yakınsadığını söylemiştik. ama bazı durumlarda örneklem saysısı yetersiz kalıp 30 dan düşük 
+kalabiliyor. işte ozaman bizler normal dağılım ve standart dağılımları yönetemiyoruz. burada işte t dağılımı devreye giriyor.
+t dağılımı normal dağılıma benzeyen bir dağılımdır.
+bu t dağılımı örneklem sayısı 30 dan küçük ise kullanılır.
+z tablosunda bize gerekli nokta z noktasıydı yani z scoruydu. bu sayede bizler alan hesaplama yapabiliyorduk. ama t dağılımda bize gerekli nokta ise df  yani serbestlik derecesi var.
+t dağılımda serbestik derecesi arttikça t dağılımı normal dağılıma yakınsar bunu bil.
+
+
 
 
 
