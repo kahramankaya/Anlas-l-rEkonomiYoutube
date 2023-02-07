@@ -195,6 +195,7 @@ veri2=stats.t.rvs(loc=0,df=2,size=15)
 sns.distplot(veri2,color="black",kde=True,hist=False)
 plt.show() # görüldüğü üzere df yani serbestliğini artırdığımız zaman grafik normalliğie daha yakınlaştı.
 
+# böylece eğere  örnekleme sayısıs 30 degerınden düşük ise o zamna t dağılımını kullanıyoruz. google da t table dıyerek artık alan hesabını yapabilirsin.
 
 
 
