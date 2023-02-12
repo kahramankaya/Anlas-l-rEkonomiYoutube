@@ -259,6 +259,24 @@ print(aralık) # goruldugu uzere aralık degerını verdi.
 
 
 
+#33. video:
+#şimdi sıra std bilinmiyorsa ve n 30 dan küçük ise: burada t dagılımı kullanılır.
+
+import numpy as np
+from scipy import stats
+n=30
+xort=140
+xstd=25
+GuvenAralık=0.95
+sd=n-1 # sd : serbestlik derecesi 
+
+aralık=stats.t.interval(alpha=0.95,loc=xort,df=sd,scale=xstd/np.sqrt(n))
+print(aralık) # goruldugu uzere aralık degerleri ortaya çıktı.
+
+
+
+
+
 
 
 
