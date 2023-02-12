@@ -172,7 +172,7 @@ bu vıdeo da çok detaya iniyor. istersen bakabilirsin.
 bizler eğer örneklem sayısı 30 dana büyük ise o zaman dağılım normal dağılıma yakınsadığını söylemiştik. ama bazı durumlarda örneklem saysısı yetersiz kalıp 30 dan düşük 
 kalabiliyor. işte ozaman bizler normal dağılım ve standart dağılımları yönetemiyoruz. burada işte t dağılımı devreye giriyor.
 t dağılımı normal dağılıma benzeyen bir dağılımdır.
-bu t dağılımı örneklem sayısı 30 dan küçük ise kullanılır.
+bu t dağılımı örneklem sayısı 30 dan küçük ise kullanılır. olasılık hesaplamaları bu t dağılımı ile bulunur.
 z tablosunda bize gerekli nokta z noktasıydı yani z scoruydu. bu sayede bizler alan hesaplama yapabiliyorduk. ama t dağılımda bize gerekli nokta ise df  yani serbestlik derecesi var.
 t dağılımda serbestik derecesi arttikça t dağılımı normal dağılıma yakınsar bunu bil.
 
@@ -195,7 +195,7 @@ veri2=stats.t.rvs(loc=0,df=2,size=15)
 sns.distplot(veri2,color="black",kde=True,hist=False)
 plt.show() # görüldüğü üzere df yani serbestliğini artırdığımız zaman grafik normalliğie daha yakınlaştı.
 
-# böylece eğere  örnekleme sayısıs 30 degerınden düşük ise o zamna t dağılımını kullanıyoruz. google da t table dıyerek artık alan hesabını yapabilirsin.
+# böylece eğere  örnekleme sayısıs 30 degerınden düşük ise o zaman t dağılımını kullanıyoruz. google da t table dıyerek artık alan hesabını yapabilirsin.
 
 
 
@@ -205,7 +205,27 @@ aralık tahmini: şöyle olması yüzde 95 güvenilirlik ile doğru demek aslın
 
 aralık tahmini eğer tek populasyon uzerınde ıse ve 2 populasyon uzerınde ıse bunlar hakkında bir şeyler yazacağım.
 
-8.dk
+eğer ki aralık tahmini yaparken TEK POPÜLASYON üzerinde çalışırsak ve tek popülasyonun ORTALAMA TAHMİNİ yaparken : 
+eğer popülasyonun standart sapması biliniyorsa "z tablosu" kullanılır.
+eğer standart sapma bilinmiyorsa o zaman yine iki yolumuz var: orneklem sayısıs 30 dan büyük ise z tablo kullanılır.
+eger ornekleme sayısı 30 dan kucukse o zaman da t dagılımı kullanılır.
+
+
+eğer ki aralık tahmini yaparken tek popülasyon üzerinde çalışırsak ve tek popülasyonun STANDART SAPMA TAHMİNİ yaparken :
+Bunun içi "ki kare tablosu" kullanılır.
+
+
+eğer ki aralık tahmini yaparken tek popülasyon üzerinde çalışırsak ve tek popülasyonun ORAN TAHMİNİ yaparken :
+Bunun için yine z tablo kullanılır.
+
+
+
+
+eğer ki aralık tahmini yaparken İKİ POPÜLASYON üzerinde çalışırsak ve  ORTALAMA FARKI TAHMİNİ yaparken : 
+Bunu yaparken eğer standart sapma biliniyorsa z tablo kullanılır.
+eger std bilinmiyorsa o zaman varyans testleri kullanılır.
+
+
 
 
 
