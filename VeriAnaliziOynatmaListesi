@@ -282,7 +282,7 @@ print(aralık) # goruldugu uzere aralık degerleri ortaya çıktı.
 Şimdi iki popülasyonda aralık tahmini yapmayı öğreneceğiz.
 burada std biliniyorsa z tablosu kullanılır. ve de std bilinmeyip n1 ve n2 >30 ise  zaman yine z tablosu kullanılır. ama std yok ve 
 n1 n2 < 30 ise o zaman t tablosu kullanılır.
-ornek: bır fabrıkada kı urun var : A ve B . Bunlar hakkında biligi verilmiş ve a ve b nın ortalama farkları hakkında bılgı sorulmuş.
+ornek: bır fabrıkada kı urun var : A ve B . Bunlar hakkında biligi verilmiş ve a ve b nın ortalama agırlıklarının farkları  sorulmuş. ortA-ortB % 95 guven ile ne kadar?
 
 nA=28
 nB=30
