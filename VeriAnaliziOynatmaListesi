@@ -206,10 +206,10 @@ aralık tahmini: şöyle olması yüzde 95 güvenilirlik ile doğru demek aslın
 aralık tahmini eğer tek populasyon uzerınde ıse ve 2 populasyon uzerınde ıse bunlar hakkında bir şeyler yazacağım.
 
 eğer ki aralık tahmini yaparken TEK POPÜLASYON üzerinde çalışırsak ve tek popülasyonun ORTALAMA TAHMİNİ yaparken : 
-eğer popülasyonun standart sapması biliniyorsa "z tablosu" kullanılır.
+eğer popülasyonun standart sapması biliniyorsa "z tablosu" kullanılır. bak eğer orneklemın std verilmişse yine z kullanılmayabılır. bız std yı populasyon ıcın vermısse kesın o zaman z tablosu kullanırız.
 eğer standart sapma bilinmiyorsa o zaman yine iki yolumuz var: orneklem sayısıs 30 dan büyük ise z tablo kullanılır.
 eger ornekleme sayısı 30 dan kucukse o zaman da t dagılımı kullanılır.
-
+sorularda daıma dıkkat et: verılen std orneklemın mı yoksa populasyonun mu.
 
 eğer ki aralık tahmini yaparken tek popülasyon üzerinde çalışırsak ve tek popülasyonun STANDART SAPMA TAHMİNİ yaparken :
 Bunun içi "ki kare tablosu" kullanılır.
@@ -280,7 +280,7 @@ print(aralık) # goruldugu uzere aralık degerleri ortaya çıktı.
 
 34.video:
 Şimdi iki popülasyonda aralık tahmini yapmayı öğreneceğiz.
-burada std biliniyorsa z tablosu kullanılır. ve de std bilinmeyip n1 ve n2 >30 ise  zaman yine z tablosu kullanılır. ama std yok ve 
+burada populasyonun std biliniyorsa z tablosu kullanılır. ve de populasyonun std bilinmeyip n1 ve n2 >30 ise  zaman yine z tablosu kullanılır. ama std yok ve 
 n1 n2 < 30 ise o zaman t tablosu kullanılır.
 ornek: bır fabrıkada kı urun var : A ve B . Bunlar hakkında biligi verilmiş ve a ve b nın ortalama agırlıklarının farkları  sorulmuş. ortA-ortB % 95 guven ile ne kadar?
 
@@ -298,6 +298,20 @@ print(AralıkTahmını)
 
 
 
+
+ornek 2: serbestlık derecsı(df)= n1+n2-2 olur. cunku 2 tane grup var.
+bu ornekte bırleştırilmiş varyans denılen bır terım var: bu terımın formulu var. bakabılrsın ınternetten. ya da vıdeo dan.
+nA=8
+nB=10
+BırlestırılmısVaryans=0.05
+ortA=3
+ortB=2.7
+guven=0.95
+n3=((1/nA)+(1/nB))
+import numpy as np
+from scipy import stats
+AralıkTahmını=stats.t.interval(alpha=guven,df=(nA+nB-2),loc=ortA-ortB, scale=np.sqrt(n3*BırlestırılmısVaryans))
+print(AralıkTahmını)
 
 
 
