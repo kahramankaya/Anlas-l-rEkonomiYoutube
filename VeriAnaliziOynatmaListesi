@@ -279,7 +279,22 @@ print(aralık) # goruldugu uzere aralık degerleri ortaya çıktı.
 
 
 34.video:
+Şimdi iki popülasyonda aralık tahmini yapmayı öğreneceğiz.
+burada std biliniyorsa z tablosu kullanılır. ve de std bilinmeyip n1 ve n2 >30 ise  zaman yine z tablosu kullanılır. ama std yok ve 
+n1 n2 < 30 ise o zaman t tablosu kullanılır.
+ornek: bır fabrıkada kı urun var : A ve B . Bunlar hakkında biligi verilmiş ve a ve b nın ortalama farkları hakkında bılgı sorulmuş.
 
+nA=28
+nB=30
+varyansA=164
+varyansB=216
+ortA=32
+ortB=6
+guven=0.95
+import numpy as np
+from scipy import stats
+AralıkTahmını=stats.norm.interval(alpha=guven,loc=(ortA-ortB),scale=np.sqrt((varyansA/nA)+(varyansB/nB)))
+print(AralıkTahmını)
 
 
 
